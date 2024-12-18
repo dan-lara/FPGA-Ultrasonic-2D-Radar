@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Dec 18 00:19:43 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Servo_IP
+Top-level Entity Name : IP_Servo_Avalon
+Family : MAX 10
+Total logic elements : 137
+    Total combinational functions : 106
+    Dedicated logic registers : 53
+Total registers : 53
+Total pins : 37
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
