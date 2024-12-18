@@ -1,0 +1,8 @@
+*.awf
+work/
+*.wlf
+
+*.bak
+*.log
+incremental_db/
+db/
