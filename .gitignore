@@ -6,3 +6,12 @@ work/
 *.log
 incremental_db/
 db/
+
+#Eclipse Project files
+software/*.elf
+software/*.map
+software/*.objdump
+software/*.o
+software/*.d
+#Eclipse BPS project files
+software/*_bps/obj/*
