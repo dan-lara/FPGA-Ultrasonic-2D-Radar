@@ -15,7 +15,7 @@ Architecture Behavior of IP_Servo Is
 
 signal counter    : integer := 0; -- Clock Counter jusqu'a 20ms
 constant FREQ_DIV : integer := 1; -- 100MHz -> 2, 50MHz -> 1
-constant PULSE_MIN : integer := 40_000 * FREQ_DIV; -- 0.9 ms
+constant PULSE_MIN : integer := 40_000 * FREQ_DIV; -- 0.8 ms
 constant PULSE_MAX : integer := 130_000 * FREQ_DIV; -- 2.6 ms
 constant PERIOD    : integer := 1_000_000 * FREQ_DIV;  -- 20 ms period (1,000,000 cycles)
 Begin
@@ -40,7 +40,7 @@ begin
           else
 			 
             if ( counter < (PULSE_MIN +(to_integer (unsigned(position)))*100) * FREQ_DIV) Then
-					-- ((130_000 - 40_000) * position (max 900) / 180); Donc 
+					-- ((130_000 - 40_000) * position (max 900) / 180);
 					commande <= '1';
             else
 					commande <= '0';

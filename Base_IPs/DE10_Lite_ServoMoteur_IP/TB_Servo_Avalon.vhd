@@ -53,8 +53,11 @@ begin
         end loop;
     end process;
 
+    -- Processus de stimulus
     stimulus_process : process
     begin
+        -- Conditions initiales
+        -- report "Début de la simulation...";
         reset_n <= '0'; -- Appliquer le reset
         chipselect <= '0';
         write_n <= '1';
@@ -65,6 +68,7 @@ begin
         wait for 50 ns;
 
         -- Écrire une valeur pour définir la largeur de l'impulsion (par exemple, 300)
+        -- report "Écriture de la valeur 300 dans WriteData...";
         chipselect <= '1';
         write_n <= '0';
         WriteData <= std_logic_vector(to_unsigned(600, 32));
@@ -75,6 +79,7 @@ begin
         wait for 15 ms; -- Attendre quelques périodes PWM
 
         -- Écrire une nouvelle valeur (par exemple, 700)
+        -- report "Écriture de la valeur 700 dans WriteData...";
         chipselect <= '1';
         write_n <= '0';
         WriteData <= std_logic_vector(to_unsigned(900, 32));
@@ -85,6 +90,7 @@ begin
         wait for 15 ms;
 
         -- Écrire une valeur hors plage (par exemple, 1000)
+        -- report "Écriture de la valeur invalide 1000 dans WriteData...";
         chipselect <= '1';
         write_n <= '0';
         WriteData <= std_logic_vector(to_unsigned(1800, 32));

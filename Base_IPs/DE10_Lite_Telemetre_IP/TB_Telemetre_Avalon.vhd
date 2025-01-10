@@ -2,11 +2,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity TB_Telemetre_DUT is
+entity TB_Telemetre_Avalon_DUT is
     -- Pas de ports pour un testbench
-end TB_Telemetre_DUT;
+end TB_Telemetre_Avalon_DUT;
 
-architecture Behavioral of TB_Telemetre_DUT is
+architecture Behavioral of TB_Telemetre_Avalon_DUT is
     -- Déclarations des signaux pour connecter au DUT (Device Under Test)
     signal clk         : std_logic := '0';
     signal rst_n       : std_logic := '0';
