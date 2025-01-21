@@ -15,3 +15,5 @@ software/*.o
 software/*.d
 #Eclipse BPS project files
 software/*_bps/obj/*
+
+*.zip
