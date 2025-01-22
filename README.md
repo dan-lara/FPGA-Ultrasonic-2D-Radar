@@ -102,11 +102,6 @@ Nous accueillons les contributions de la communauté pour améliorer ce projet. 
     ```
 6. Ouvrez une **Pull Request** sur le dépôt original.
 
-Merci pour vos contributions !
-
-Daniel FERREIRA LARA
-daniel.ferreira_lara@etu.sorbonne-universite.fr
-
 ## Contact
 
 Pour toute question ou assistance supplémentaire, veuillez contacter :
